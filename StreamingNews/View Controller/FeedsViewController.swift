@@ -50,7 +50,7 @@ class FeedsViewController: UIViewController, FeedsVMDelegate, FeedsVMDelegateFor
         }
     }
     
-    func checkIffetching(isfetching isFetching: Bool) {
+    func checkIfFetching(isfetching isFetching: Bool) {
         DispatchQueue.main.async { [weak self] in
             guard let self else { return }
             if isFetching {
